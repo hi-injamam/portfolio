@@ -1,0 +1,16 @@
+title: "A.S.M Injamamul Hossain"
+description: "Digital marketing across Bangladesh's markets — agency, brand, and platform."
+url: "https://injamam.com"
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:title/
+timezone: Asia/Dhaka
+
+# Blog posts use the post layout + share a tag; everything else stays untouched.
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+
+# Keep the CMS admin and assets; ignore build/config files.
+include: [admin]
+exclude: [Gemfile, Gemfile.lock, README.md, vendor, .gitignore]

@@ -1,0 +1,205 @@
+# ---- Decap CMS configuration ----
+# Change `repo` to  <your-github-username>/<your-repo>  before deploying.
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO
+  branch: main
+  # Authenticate GitHub login via a free OAuth relay (see README, step 5).
+  base_url: https://YOUR-OAUTH-RELAY.workers.dev
+
+# Lets you run the CMS locally with `npx decap-server` for testing.
+local_backend: true
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  # ============ BLOG ============
+  - name: "blog"
+    label: "Blog posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tag", name: "tag", widget: "string", required: false, hint: "e.g. Case study, Growth, Tooling" }
+      - { label: "Summary", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ============ CV CONTENT ============
+  - name: "cv"
+    label: "CV content"
+    files:
+      - name: "cv_data"
+        label: "CV — all blocks & copy"
+        file: "_data/cv.json"
+        fields:
+          # ---- Copy / headlines ----
+          - label: "Copy (headlines & intros)"
+            name: "copy"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero eyebrow", name: "hero_eyebrow", widget: "string" }
+              - { label: "Hero name line 1", name: "hero_name1", widget: "string" }
+              - { label: "Hero name line 2", name: "hero_name2", widget: "string" }
+              - { label: "Hero tagline (HTML ok)", name: "hero_tagline", widget: "text" }
+              - { label: "Path — kicker", name: "path_kicker", widget: "string" }
+              - { label: "Path — headline", name: "path_headline", widget: "string" }
+              - { label: "Path — intro", name: "path_intro", widget: "text" }
+              - { label: "Ecosystem — kicker", name: "eco_kicker", widget: "string" }
+              - { label: "Ecosystem — headline", name: "eco_headline", widget: "string" }
+              - { label: "Ecosystem — intro", name: "eco_intro", widget: "text" }
+              - { label: "Chart — kicker", name: "chart_kicker", widget: "string" }
+              - { label: "Chart — headline", name: "chart_headline", widget: "string" }
+              - { label: "Chart — intro", name: "chart_intro", widget: "text" }
+              - { label: "Chart — takeaway (HTML ok)", name: "chart_take", widget: "text" }
+              - { label: "Chart — note", name: "chart_note", widget: "text" }
+              - { label: "Verticals — kicker", name: "verts_kicker", widget: "string" }
+              - { label: "Verticals — headline", name: "verts_headline", widget: "string" }
+              - { label: "Verticals — intro", name: "verts_intro", widget: "text" }
+              - { label: "Spend — kicker", name: "spend_kicker", widget: "string" }
+              - { label: "Spend — headline", name: "spend_headline", widget: "string" }
+              - { label: "Spend — intro", name: "spend_intro", widget: "text" }
+              - { label: "Tools — kicker", name: "tools_kicker", widget: "string" }
+              - { label: "Tools — headline", name: "tools_headline", widget: "string" }
+              - { label: "Tools — intro", name: "tools_intro", widget: "text" }
+              - { label: "Ledger — kicker", name: "ledger_kicker", widget: "string" }
+              - { label: "Ledger — headline", name: "ledger_headline", widget: "string" }
+              - { label: "Ledger — intro", name: "ledger_intro", widget: "text" }
+              - { label: "Awards — kicker", name: "awards_kicker", widget: "string" }
+              - { label: "Awards — headline", name: "awards_headline", widget: "string" }
+              - { label: "Certs — kicker", name: "certs_kicker", widget: "string" }
+              - { label: "Certs — headline", name: "certs_headline", widget: "string" }
+              - { label: "Certs — intro", name: "certs_intro", widget: "text" }
+              - { label: "Brands — kicker", name: "brands_kicker", widget: "string" }
+              - { label: "Brands — headline", name: "brands_headline", widget: "string" }
+              - { label: "Blog — kicker", name: "blog_kicker", widget: "string" }
+              - { label: "Blog — headline", name: "blog_headline", widget: "string" }
+              - { label: "Blog — intro", name: "blog_intro", widget: "text" }
+              - { label: "Coda — kicker", name: "coda_kicker", widget: "string" }
+              - { label: "Coda — headline", name: "coda_headline", widget: "string" }
+              - { label: "Connect — kicker", name: "connect_kicker", widget: "string" }
+          # ---- Header meta chips ----
+          - { label: "Header meta chips", name: "meta", widget: "list", field: { label: "Chip", name: "chip", widget: "string" } }
+          # ---- Experience / chapters ----
+          - label: "Experience (roles)"
+            name: "chapters"
+            widget: "list"
+            summary: "{{fields.role}} — {{fields.org}}"
+            collapsed: true
+            fields:
+              - { label: "Years", name: "yr", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Org", name: "org", widget: "string" }
+              - { label: "Place", name: "place", widget: "string" }
+              - { label: "Scope 0-1", name: "scope", widget: "number", value_type: "float", min: 0, max: 1, step: 0.01 }
+              - { label: "How I got it", name: "howGot", widget: "string", required: false }
+              - { label: "Increment", name: "increment", widget: "string", required: false }
+              - { label: "Flag route (unverified)", name: "flagRoute", widget: "boolean", required: false, default: false }
+              - { label: "Story", name: "story", widget: "text" }
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - { label: "Text/monogram", name: "text", widget: "string" }
+                  - { label: "Background hex", name: "bg", widget: "string", required: false }
+                  - { label: "Domain (for logo)", name: "domain", widget: "string", required: false }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Value", name: "v", widget: "number", value_type: "float" }
+                  - { label: "Suffix", name: "suf", widget: "string", required: false }
+                  - { label: "Decimals", name: "dec", widget: "number", required: false }
+                  - { label: "Label", name: "lab", widget: "string" }
+              - { label: "Skills", name: "skills", widget: "list", field: { label: "Skill", name: "skill", widget: "string" } }
+          # ---- Verticals ----
+          - label: "Verticals"
+            name: "verticals"
+            widget: "list"
+            summary: "{{fields.vh}}"
+            collapsed: true
+            fields:
+              - { label: "Vertical", name: "vh", widget: "string" }
+              - { label: "Brands", name: "brands", widget: "string" }
+              - { label: "Capabilities", name: "caps", widget: "list", field: { label: "Capability", name: "cap", widget: "string" } }
+          # ---- Tools ----
+          - label: "Tools (grouped)"
+            name: "tools"
+            widget: "list"
+            summary: "{{fields.group}}"
+            collapsed: true
+            fields:
+              - { label: "Group", name: "group", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Monogram", name: "mono", widget: "string" }
+                  - { label: "Background hex", name: "bg", widget: "string", required: false }
+                  - { label: "Text hex", name: "fg", widget: "string", required: false }
+                  - { label: "Domain (for logo)", name: "domain", widget: "string", required: false }
+          # ---- Impact ledger ----
+          - label: "Impact numbers"
+            name: "ledger"
+            widget: "list"
+            summary: "{{fields.cap}}"
+            collapsed: true
+            fields:
+              - { label: "Value", name: "v", widget: "number", value_type: "float" }
+              - { label: "Suffix", name: "suf", widget: "string", required: false }
+              - { label: "Caption", name: "cap", widget: "string" }
+          # ---- Awards ----
+          - label: "Awards"
+            name: "awards"
+            widget: "list"
+            summary: "{{fields.ttl}}"
+            collapsed: true
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["grandprix","medal","lion","star","chart"] }
+              - { label: "Title", name: "ttl", widget: "string" }
+              - { label: "Subtitle", name: "sub", widget: "string" }
+              - { label: "Year", name: "yr", widget: "string" }
+          # ---- Certifications ----
+          - label: "Certifications"
+            name: "certs"
+            widget: "list"
+            summary: "{{fields.name}}"
+            collapsed: true
+            fields:
+              - { label: "Issuer name", name: "name", widget: "string" }
+              - label: "Issuer badge"
+                name: "issuer"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string", required: false }
+                  - { label: "Is Google", name: "google", widget: "boolean", required: false, default: false }
+                  - { label: "Background hex", name: "bg", widget: "string", required: false }
+                  - { label: "Domain", name: "domain", widget: "string", required: false }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          # ---- Brand wall ----
+          - { label: "Brand wall", name: "brands", widget: "list", field: { label: "Brand", name: "brand", widget: "string" } }
+          # ---- Through-lines ----
+          - label: "Through-lines (coda)"
+            name: "threads"
+            widget: "list"
+            summary: "{{fields.h}}"
+            collapsed: true
+            fields:
+              - { label: "Number", name: "n", widget: "string" }
+              - { label: "Heading", name: "h", widget: "string" }
+              - { label: "Text", name: "p", widget: "text" }
+          # ---- Connect links ----
+          - label: "Connect links"
+            name: "links"
+            widget: "list"
+            summary: "{{fields.label}}"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+              - { label: "External", name: "ext", widget: "boolean", required: false, default: false }

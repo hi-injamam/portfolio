@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Writing — A.S.M Injamamul Hossain"
+---
+<h1>Writing</h1>
+<div class="meta">Notes from the work</div>
+<ul class="plist">
+  {% for post in site.posts %}
+  <li><a href="{{ post.url | relative_url }}">
+    <span class="t">{% if post.tag %}{{ post.tag }} · {% endif %}{{ post.date | date: "%b %Y" }}</span>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </a></li>
+  {% endfor %}
+  {% unless site.posts %}<li><p>First post coming soon.</p></li>{% endunless %}
+</ul>
