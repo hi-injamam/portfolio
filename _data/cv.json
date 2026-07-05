@@ -1,4 +1,86 @@
 {
+  "platforms": [
+    "Google — Search",
+    "Display",
+    "YouTube",
+    "Shopping",
+    "Meta",
+    "Instagram",
+    "Messenger",
+    "TikTok",
+    "LinkedIn",
+    "X / Twitter",
+    "Programmatic"
+  ],
+  "switches": [
+    {
+      "i": 0,
+      "logos": [
+        {
+          "text": "Intern",
+          "bg": "#5A6478"
+        },
+        {
+          "text": "RPSI",
+          "bg": "#1F3A5F"
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "logos": [
+        {
+          "text": "MS",
+          "bg": "#E23B2E",
+          "domain": "mindshareworld.com"
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "logos": [
+        {
+          "text": "MK",
+          "bg": "#6C3EF4",
+          "domain": "markopolo.ai"
+        },
+        {
+          "text": "MBA",
+          "bg": "#127C8A",
+          "domain": "wpp.com"
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "logos": [
+        {
+          "text": "Bata",
+          "bg": "#E4002B",
+          "domain": "bata.com"
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "logos": [
+        {
+          "text": "aleph",
+          "bg": "#111318",
+          "domain": "alephholding.com"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "title": "Injamam — Digital Raven OTW",
+    "description": "Injamamul Hossain — exploring and fixing digital marketing across Bangladesh's markets: agency, brand, and platform. Measurement, strategy, and case studies.",
+    "faviconText": "i",
+    "preloader": "signature",
+    "ga4": "",
+    "headScripts": "",
+    "bodyEndScripts": ""
+  },
   "meta": [
     "2019 → Present",
     "Uttara, Dhaka",
@@ -7,20 +89,26 @@
   ],
   "chapters": [
     {
-      "yr": "2019 — 2020",
-      "role": "Teaching & Research Assistant → Principal Officer",
+      "skills": [
+        "SPSS",
+        "Statistics",
+        "Excel (formulas)",
+        "Research"
+      ],
       "org": "Independent University, Bangladesh (IUB)",
       "place": "Dhaka",
-      "scope": 0.1,
       "logo": {
         "text": "IUB",
         "bg": "#0B7A4B",
         "domain": "iub.edu.bd"
       },
+      "increment": null,
+      "scope": 0.1,
+      "story": "Where the analytical habit started — SPSS, statistics, and a national study on expatriate experts in the RMG sector. The spreadsheet-and-data fluency everything later stands on was built here.",
+      "role": "Teaching & Research Assistant → Principal Officer",
+      "yr": "2019 — 2020",
       "howGot": "Recruited on merit",
       "flagRoute": true,
-      "increment": null,
-      "story": "Where the analytical habit started — SPSS, statistics, and a national study on expatriate experts in the RMG sector. The spreadsheet-and-data fluency everything later stands on was built here.",
       "stats": [
         {
           "v": 3.71,
@@ -31,28 +119,28 @@
           "v": 3,
           "lab": "Dean's & VC honour lists"
         }
-      ],
-      "skills": [
-        "SPSS",
-        "Statistics",
-        "Excel (formulas)",
-        "Research"
       ]
     },
     {
-      "yr": "2020 — 2021",
-      "role": "Marketing Executive → Brand Marketing Lead",
+      "skills": [
+        "Client management",
+        "Brand strategy",
+        "SEO / SMO",
+        "Web & UX"
+      ],
       "org": "RPSI Services Ltd · UK-based agency",
       "place": "Remote",
-      "scope": 0.28,
       "logo": {
         "text": "RPSI",
         "bg": "#1F3A5F"
       },
+      "increment": "—",
+      "scope": 0.28,
+      "story": "The client side of an agency: proposals, contracts, brand strategy, and shipping everything from ERP builds to SEO and UX. Took a startup to break-even in six months and onboarded three major BPO clients.",
+      "role": "Marketing Executive → Brand Marketing Lead",
+      "yr": "2020 — 2021",
       "howGot": "First industry break",
       "flagRoute": true,
-      "increment": "—",
-      "story": "The client side of an agency: proposals, contracts, brand strategy, and shipping everything from ERP builds to SEO and UX. Took a startup to break-even in six months and onboarded three major BPO clients.",
       "stats": [
         {
           "v": 6,
@@ -63,28 +151,29 @@
           "v": 3,
           "lab": "Major clients onboarded"
         }
-      ],
-      "skills": [
-        "Client management",
-        "Brand strategy",
-        "SEO / SMO",
-        "Web & UX"
       ]
     },
     {
-      "yr": "2022 — 2023",
-      "role": "Digital Marketing Strategist",
+      "skills": [
+        "Search & performance",
+        "Programmatic",
+        "CPAS / Collaborative Ads",
+        "Attribution",
+        "Report automation"
+      ],
       "org": "Mindshare · A WPP company",
       "place": "Dhaka",
-      "scope": 0.5,
       "logo": {
         "text": "MS",
         "bg": "#E23B2E",
         "domain": "mindshareworld.com"
       },
-      "howGot": "Referred",
       "increment": "+40%",
+      "scope": 0.5,
       "story": "Performance and search strategy across FMCG, footwear and beverage giants — PepsiCo, Unilever (Lux, Lifebuoy), Arla, Castrol, Bata. Built report automation and offline-conversion attribution, and started winning: DMA Silver and a Commward Grand Prix at ~45x ROAS.",
+      "role": "Digital Marketing Strategist",
+      "yr": "2022 — 2023",
+      "howGot": "Referred",
       "stats": [
         {
           "v": 45,
@@ -96,57 +185,56 @@
           "suf": " cr",
           "lab": "BDT saved on TV+ spend"
         }
-      ],
-      "skills": [
-        "Search & performance",
-        "Programmatic",
-        "CPAS / Collaborative Ads",
-        "Attribution",
-        "Report automation"
       ]
     },
     {
-      "yr": "2023",
-      "role": "Product Strategist",
+      "skills": [
+        "GTM strategy",
+        "Product",
+        "Ad-tech",
+        "Media investment"
+      ],
       "org": "Markopolo AI Inc. · US-based startup",
       "place": "Remote",
-      "scope": 0.58,
       "logo": {
         "text": "MK",
         "bg": "#6C3EF4",
         "domain": "markopolo.ai"
       },
-      "howGot": "One café interview",
       "increment": "+25%",
+      "scope": 0.58,
       "story": "A short, sharp stint on the product side of an ad-tech startup — GTM strategy, feature testing, and steering media investment. First time building the tool instead of just using it.",
+      "role": "Product Strategist",
+      "yr": "2023",
+      "howGot": "One café interview",
       "stats": [
         {
           "v": 3,
           "suf": " mo",
           "lab": "Focused GTM sprint"
         }
-      ],
-      "skills": [
-        "GTM strategy",
-        "Product",
-        "Ad-tech",
-        "Media investment"
       ]
     },
     {
-      "yr": "2023 — 2025",
-      "role": "Analytics Lead",
+      "skills": [
+        "End-to-end tracking",
+        "GA4 / Firebase",
+        "App attribution",
+        "Stakeholder strategy"
+      ],
       "org": "MBA Bangladesh · A WPP company",
       "place": "Dhaka",
-      "scope": 0.72,
       "logo": {
         "text": "MBA",
         "bg": "#127C8A",
         "domain": "wpp.com"
       },
-      "howGot": "One WhatsApp call",
       "increment": "+30%",
+      "scope": 0.72,
       "story": "The connective role — the bridge between campaign managers, developers and client stakeholders, turning data into decisions. Led analytics on Banglalink's MyBL app and grew its revenue from 1 to 2 crore daily, a 100% jump, in a decade-high telco revenue year.",
+      "role": "Analytics Lead",
+      "yr": "2023 — 2025",
+      "howGot": "One WhatsApp call",
       "stats": [
         {
           "v": 100,
@@ -157,28 +245,29 @@
           "v": 11,
           "lab": "Major brands supported"
         }
-      ],
-      "skills": [
-        "End-to-end tracking",
-        "GA4 / Firebase",
-        "App attribution",
-        "Stakeholder strategy"
       ]
     },
     {
-      "yr": "2025 — 2026",
-      "role": "Digital Marketing Manager",
+      "skills": [
+        "Brand marketing",
+        "eCom",
+        "Hyperlocal ads",
+        "Agency leadership",
+        "PR"
+      ],
       "org": "Bata Bangladesh",
       "place": "Dhaka",
-      "scope": 0.88,
       "logo": {
         "text": "Bata",
         "bg": "#E4002B",
         "domain": "bata.com"
       },
-      "howGot": "One interview after deadline",
       "increment": "+35%",
+      "scope": 0.88,
       "story": "First brand-side role, owning Bata's whole digital portfolio — eCom performance, brand strategy, creative and media agencies, influencer and PR. Launched Bangladesh's first hyperlocal store ads and the Floatz & Ballerina lines, and drove the highest recorded sales in Bata BD history.",
+      "role": "Digital Marketing Manager",
+      "yr": "2025 — 2026",
+      "howGot": "One interview after deadline",
       "stats": [
         {
           "v": 3,
@@ -190,42 +279,217 @@
           "suf": "M",
           "lab": "BDT eCom sales, Q1'26"
         }
-      ],
-      "skills": [
-        "Brand marketing",
-        "eCom",
-        "Hyperlocal ads",
-        "Agency leadership",
-        "PR"
       ]
     },
     {
-      "yr": "2026 — Present",
-      "role": "Senior Client Solutions Manager · Google Team",
-      "org": "Aleph — digital-advertising partner for emerging markets",
-      "place": "Bangladesh & Sri Lanka",
-      "scope": 1,
-      "logo": {
-        "text": "aleph",
-        "bg": "#111318",
-        "domain": "alephholding.com"
-      },
-      "howGot": "Some other time :3",
-      "increment": "+30%",
-      "story": "The current chapter: solving measurement for advertisers across Bangladesh and Sri Lanka on the Google team at Aleph. Back to the discipline the whole path was built on — proving, cleanly and defensibly, what actually worked.",
-      "stats": [
-        {
-          "v": 2,
-          "lab": "Markets specialised — BD & LK"
-        }
-      ],
       "skills": [
         "Measurement",
         "Google Marketing Platform",
         "Client solutions",
         "BD & LK markets"
+      ],
+      "org": "Aleph — digital-advertising partner for emerging markets",
+      "place": "Bangladesh & Sri Lanka",
+      "logo": {
+        "text": "aleph",
+        "bg": "#111318",
+        "domain": "alephholding.com"
+      },
+      "increment": "+30%",
+      "scope": 1,
+      "story": "The current chapter: solving measurement for advertisers across Bangladesh and Sri Lanka on the Google team at Aleph. Back to the discipline the whole path was built on — proving, cleanly and defensibly, what actually worked.",
+      "role": "Senior Client Solutions Manager · Google Team",
+      "yr": "2026 — Present",
+      "howGot": "Some other time :3",
+      "stats": [
+        {
+          "v": 2,
+          "lab": "Markets specialised — BD & LK"
+        }
       ]
     }
+  ],
+  "ledger": [
+    {
+      "v": 45,
+      "suf": "x",
+      "cap": "Peak campaign ROAS (Commward '23)"
+    },
+    {
+      "v": 25,
+      "suf": "x",
+      "cap": "eCommerce sales ROAS (2022)"
+    },
+    {
+      "v": 25,
+      "suf": "+ cr",
+      "cap": "BDT eComm sales driven (2022)"
+    },
+    {
+      "v": 100,
+      "suf": "%",
+      "cap": "MyBL app revenue growth"
+    },
+    {
+      "v": 4,
+      "suf": " cr",
+      "cap": "BDT saved on TV+ investment"
+    },
+    {
+      "v": 3,
+      "suf": "B+",
+      "cap": "BDT Bata retail sales, Q1 2026"
+    }
+  ],
+  "threads": [
+    {
+      "n": "01",
+      "h": "Analyst by habit",
+      "p": "I tend to read the pattern in the data first, then build the fix. It's the habit under most of what I do."
+    },
+    {
+      "n": "02",
+      "h": "Every side of the table",
+      "p": "Agency, brand, retail and platform — I've been fortunate to work all four, which makes it easier to see the whole picture."
+    },
+    {
+      "n": "03",
+      "h": "Measurement first",
+      "p": "From a research desk to Aleph's Google team, the constant was proving which unit of spend did the work."
+    },
+    {
+      "n": "04",
+      "h": "Constraint as craft",
+      "p": "The Grand Prix came from a small-budget brief. The tighter the budget, the sharper the thinking it forces."
+    }
+  ],
+  "brands": [
+    {
+      "n": "Bata",
+      "d": "bata.com"
+    },
+    {
+      "n": "PepsiCo",
+      "d": "pepsico.com"
+    },
+    {
+      "n": "Unilever",
+      "d": "unilever.com"
+    },
+    {
+      "n": "Lifebuoy",
+      "d": "lifebuoy.com"
+    },
+    {
+      "n": "Banglalink",
+      "d": "banglalink.net"
+    },
+    {
+      "n": "Arla Foods",
+      "d": "arla.com"
+    },
+    {
+      "n": "Castrol",
+      "d": "castrol.com"
+    },
+    {
+      "n": "Miniso",
+      "d": "miniso.com"
+    },
+    {
+      "n": "ACI",
+      "d": "aci-bd.com"
+    },
+    {
+      "n": "Marico",
+      "d": "marico.com"
+    },
+    {
+      "n": "Colgate",
+      "d": "colgate.com"
+    },
+    {
+      "n": "Domino's Pizza",
+      "d": "dominos.com"
+    },
+    {
+      "n": "IDLC",
+      "d": "idlc.com"
+    },
+    {
+      "n": "BSRM",
+      "d": "bsrm.com"
+    },
+    {
+      "n": "New Zealand Dairy"
+    },
+    {
+      "n": "Shanta Properties"
+    },
+    {
+      "n": "Turaag Active"
+    }
+  ],
+  "certs": [
+    {
+      "issuer": {
+        "google": true,
+        "text": "G"
+      },
+      "name": "Google",
+      "items": [
+        "Ads — Search, Display, Video & Measurement",
+        "Analytics Individual Qualification",
+        "Fundamentals of Digital Marketing",
+        "Digital Guru — APAC yearlong program"
+      ]
+    },
+    {
+      "issuer": {
+        "text": "∞",
+        "bg": "#0866FF",
+        "domain": "meta.com"
+      },
+      "name": "Meta",
+      "items": [
+        "Blueprint — Manage Ad Campaigns",
+        "Blueprint — Collaborative Ads"
+      ]
+    },
+    {
+      "issuer": {
+        "text": "CFI",
+        "bg": "#0A2540"
+      },
+      "name": "Corporate Finance Institute",
+      "items": [
+        "Excel Crash Course — ID 20029828"
+      ]
+    },
+    {
+      "issuer": {
+        "text": "◆",
+        "bg": "#7A5CFF"
+      },
+      "name": "Platform training",
+      "items": [
+        "Eskimi — Programmatic AdOps",
+        "Adjust Growth Lab — mobile attribution",
+        "POKKT — gaming platform workshop"
+      ]
+    }
+  ],
+  "strategies": [
+    "Performance marketing",
+    "Brand marketing",
+    "Search strategy",
+    "App marketing",
+    "CPAS / Collaborative Ads",
+    "Offline-conversion attribution",
+    "MarTech integrations",
+    "Influencer & PR",
+    "Social listening",
+    "Report automation"
   ],
   "eco": {
     "agency": [
@@ -267,106 +531,124 @@
       }
     ]
   },
-  "verticals": [
+  "copy": {
+    "eco_kicker": "Across the ecosystem",
+    "hero_name1": "A.S.M Injamamul",
+    "hero_name2": "Hossain",
+    "eco_headline": "I've worked every side of the table.",
+    "certs_kicker": "Credentials",
+    "hero_eyebrow": "Six years, seven roles — scroll to follow the path",
+    "certs_headline": "Certified where it counts.",
+    "brands_kicker": "Behind the numbers",
+    "brands_headline": "Brands I've worked with.",
+    "chart_take": "In 2020 I sent nine applications and switched twice — an internship, then RPSI. From <b>2023 on</b>, the moves arrived as offers rather than applications: Markopolo and the Banglalink team, then Bata, then Aleph.",
+    "connect_kicker": "Connect",
+    "tools_intro": "Day-to-day across measurement, media platforms, and creative production.",
+    "coda_kicker": "What a résumé hides",
+    "ledger_kicker": "The numbers",
+    "hero_tagline": "A <b>problem-solver, and an analyst by habit</b> — I try to find the pattern before the fix. Six years in digital marketing across Bangladesh's markets, on <b>every side of it</b>: agency, brand, and platform.",
+    "coda_headline": "The line above isn't jobs. It's one argument, made seven times.",
+    "ledger_headline": "What the work moved.",
+    "spend_intro": "The scale I've operated at, the platforms I buy on, and the strategies I run for global brands across South Asian markets.",
+    "chart_intro": "Applications sent each year (bars) against inbound conversations — referrals, intros, offers (line). The two trade places over time.",
+    "path_kicker": "The path",
+    "path_headline": "Seven roles, one habit that never changed: proving what actually worked.",
+    "verts_intro": "Brand and category experience across the verticals that matter in this market.",
+    "blog_intro": "Deeper write-ups on the campaigns and tools behind the numbers. New posts are what bring people back.",
+    "blog_kicker": "Writing & projects",
+    "verts_kicker": "Depth, by vertical",
+    "verts_headline": "Not one industry — many, each with real depth.",
+    "blog_headline": "Notes from the work — updated now and then.",
+    "path_intro": "The line drifts outward and its nodes grow as scope widens. Each stop carries how I actually landed it — and the raise that came with the move.",
+    "chart_note": "This one's really for people just starting out: it shows what steady, dedicated output does over time. Early on you chase the opportunities — but as the work, the results and the network compound, the opportunities start coming to you. That shift is the advantage.",
+    "chart_kicker": "How the moves happened",
+    "spend_kicker": "Spend & strategy",
+    "chart_headline": "Over time, the moves came through people.",
+    "spend_headline": "The scale I've worked at, and the playbooks behind it.",
+    "ledger_intro": "Every figure below is pulled directly from the record — not projections.",
+    "tools_kicker": "Toolbox",
+    "tools_headline": "The tools I work in, hands-on.",
+    "awards_kicker": "Recognition",
+    "certs_intro": "A selection — the full list runs longer.",
+    "awards_headline": "A few things that got recognised along the way.",
+    "eco_intro": "Rather than staying in one lane, I've moved through most of the digital-marketing ecosystem — buying media at the agency, owning a brand and its retail P&L, and now working on measurement from the platform side."
+  },
+  "awards": [
     {
-      "vh": "FMCG",
-      "brands": "Unilever · Marico · ACI · Colgate",
-      "caps": [
-        "Strategy",
-        "Analytics",
-        "Media buying"
-      ]
+      "icon": "grandprix",
+      "ttl": "Grand Prix — Commward",
+      "sub": "Best use of small-budget media · ~45x ROAS",
+      "yr": "2023"
     },
     {
-      "vh": "Telco",
-      "brands": "Banglalink — MyBL App",
-      "caps": [
-        "Analytics",
-        "Measurement",
-        "Performance",
-        "Strategy"
-      ]
+      "icon": "medal",
+      "ttl": "Silver — DMA Awards",
+      "sub": "Best use of Data & Analytics",
+      "yr": "2022"
     },
     {
-      "vh": "Retail & Fashion",
-      "brands": "Bata · Miniso · Turaag Active",
-      "caps": [
-        "Measurement",
-        "Analytics",
-        "Performance"
-      ]
+      "icon": "lion",
+      "ttl": "Second place — Young Lions",
+      "sub": "National competition",
+      "yr": "2023"
     },
     {
-      "vh": "Food & Beverage",
-      "brands": "PepsiCo · Arla Foods · Domino's · NZ Dairy",
-      "caps": [
-        "Measurement",
-        "Analytics",
-        "Media buying"
-      ]
+      "icon": "star",
+      "ttl": "Best Marketing Campaign",
+      "sub": "Awarded by Bata Group Global CEO",
+      "yr": "2026"
     },
     {
-      "vh": "Automotive & Lubricants",
-      "brands": "Castrol",
-      "caps": [
-        "Performance",
-        "Media buying",
-        "Attribution"
-      ]
-    },
-    {
-      "vh": "Manufacturing",
-      "brands": "BSRM",
-      "caps": [
-        "Strategy",
-        "Analytics",
-        "Lead generation"
-      ]
-    },
-    {
-      "vh": "Financial Services",
-      "brands": "IDLC",
-      "caps": [
-        "Performance",
-        "Lead campaigns",
-        "Analytics"
-      ]
-    },
-    {
-      "vh": "Real Estate",
-      "brands": "Shanta Properties",
-      "caps": [
-        "Strategy",
-        "Lead generation",
-        "Media buying"
-      ]
+      "icon": "chart",
+      "ttl": "Telco decade-high revenue",
+      "sub": "Q4 growth milestone",
+      "yr": "2023"
     }
   ],
-  "platforms": [
-    "Google — Search",
-    "Display",
-    "YouTube",
-    "Shopping",
-    "Meta",
-    "Instagram",
-    "Messenger",
-    "TikTok",
-    "LinkedIn",
-    "X / Twitter",
-    "Programmatic"
+  "links": [
+    {
+      "label": "LinkedIn ↗",
+      "href": "https://www.linkedin.com/in/injamamulhossain",
+      "ext": true
+    },
+    {
+      "label": "helloinjamam@gmail.com",
+      "href": "mailto:helloinjamam@gmail.com"
+    },
+    {
+      "label": "+880 1973 382257",
+      "href": "tel:+8801973382257"
+    }
   ],
-  "strategies": [
-    "Performance marketing",
-    "Brand marketing",
-    "Search strategy",
-    "App marketing",
-    "CPAS / Collaborative Ads",
-    "Offline-conversion attribution",
-    "MarTech integrations",
-    "Influencer & PR",
-    "Social listening",
-    "Report automation"
-  ],
+  "footer": {
+    "text": "Measurement, strategy, and the occasional experiment — written up here now and then. Always open to a good problem.",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/injamamulhossain",
+        "ext": true
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/hi-injamam",
+        "ext": true
+      },
+      {
+        "label": "Email",
+        "href": "mailto:helloinjamam@gmail.com"
+      },
+      {
+        "label": "Book a call",
+        "href": "https://calendar.app.google/TtsqN8JQctsiTBzYA",
+        "ext": true
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy/"
+      }
+    ],
+    "copyright": "Injamamul Hossain"
+  },
   "tools": [
     {
       "group": "Measurement & analytics",
@@ -480,221 +762,79 @@
       ]
     }
   ],
-  "ledger": [
+  "verticals": [
     {
-      "v": 45,
-      "suf": "x",
-      "cap": "Peak campaign ROAS (Commward '23)"
-    },
-    {
-      "v": 25,
-      "suf": "x",
-      "cap": "eCommerce sales ROAS (2022)"
-    },
-    {
-      "v": 25,
-      "suf": "+ cr",
-      "cap": "BDT eComm sales driven (2022)"
-    },
-    {
-      "v": 100,
-      "suf": "%",
-      "cap": "MyBL app revenue growth"
-    },
-    {
-      "v": 4,
-      "suf": " cr",
-      "cap": "BDT saved on TV+ investment"
-    },
-    {
-      "v": 3,
-      "suf": "B+",
-      "cap": "BDT Bata retail sales, Q1 2026"
-    }
-  ],
-  "awards": [
-    {
-      "icon": "grandprix",
-      "ttl": "Grand Prix — Commward",
-      "sub": "Best use of small-budget media · ~45x ROAS",
-      "yr": "2023"
-    },
-    {
-      "icon": "medal",
-      "ttl": "Silver — DMA Awards",
-      "sub": "Best use of Data & Analytics",
-      "yr": "2022"
-    },
-    {
-      "icon": "lion",
-      "ttl": "Second place — Young Lions",
-      "sub": "National competition",
-      "yr": "2023"
-    },
-    {
-      "icon": "star",
-      "ttl": "Best Marketing Campaign",
-      "sub": "Awarded by Bata Group Global CEO",
-      "yr": "2026"
-    },
-    {
-      "icon": "chart",
-      "ttl": "Telco decade-high revenue",
-      "sub": "Q4 growth milestone",
-      "yr": "2023"
-    }
-  ],
-  "certs": [
-    {
-      "issuer": {
-        "google": true,
-        "text": "G"
-      },
-      "name": "Google",
-      "items": [
-        "Ads — Search, Display, Video & Measurement",
-        "Analytics Individual Qualification",
-        "Fundamentals of Digital Marketing",
-        "Digital Guru — APAC yearlong program"
+      "vh": "FMCG",
+      "brands": "Unilever · Marico · ACI · Colgate",
+      "caps": [
+        "Strategy",
+        "Analytics",
+        "Media buying"
       ]
     },
     {
-      "issuer": {
-        "text": "∞",
-        "bg": "#0866FF",
-        "domain": "meta.com"
-      },
-      "name": "Meta",
-      "items": [
-        "Blueprint — Manage Ad Campaigns",
-        "Blueprint — Collaborative Ads"
+      "vh": "Telco",
+      "brands": "Banglalink — MyBL App",
+      "caps": [
+        "Analytics",
+        "Measurement",
+        "Performance",
+        "Strategy"
       ]
     },
     {
-      "issuer": {
-        "text": "CFI",
-        "bg": "#0A2540"
-      },
-      "name": "Corporate Finance Institute",
-      "items": [
-        "Excel Crash Course — ID 20029828"
+      "vh": "Retail & Fashion",
+      "brands": "Bata · Miniso · Turaag Active",
+      "caps": [
+        "Measurement",
+        "Analytics",
+        "Performance"
       ]
     },
     {
-      "issuer": {
-        "text": "◆",
-        "bg": "#7A5CFF"
-      },
-      "name": "Platform training",
-      "items": [
-        "Eskimi — Programmatic AdOps",
-        "Adjust Growth Lab — mobile attribution",
-        "POKKT — gaming platform workshop"
+      "vh": "Food & Beverage",
+      "brands": "PepsiCo · Arla Foods · Domino's · NZ Dairy",
+      "caps": [
+        "Measurement",
+        "Analytics",
+        "Media buying"
       ]
-    }
-  ],
-  "brands": [
-    {
-      "n": "Bata",
-      "d": "bata.com"
     },
     {
-      "n": "PepsiCo",
-      "d": "pepsico.com"
+      "vh": "Automotive & Lubricants",
+      "brands": "Castrol",
+      "caps": [
+        "Performance",
+        "Media buying",
+        "Attribution"
+      ]
     },
     {
-      "n": "Unilever · Lux",
-      "d": "unilever.com"
+      "vh": "Manufacturing",
+      "brands": "BSRM",
+      "caps": [
+        "Strategy",
+        "Analytics",
+        "Lead generation"
+      ]
     },
     {
-      "n": "Lifebuoy",
-      "d": "lifebuoy.com"
+      "vh": "Financial Services",
+      "brands": "IDLC",
+      "caps": [
+        "Performance",
+        "Lead campaigns",
+        "Analytics"
+      ]
     },
     {
-      "n": "Banglalink",
-      "d": "banglalink.net"
-    },
-    {
-      "n": "Arla Foods",
-      "d": "arla.com"
-    },
-    {
-      "n": "Castrol",
-      "d": "castrol.com"
-    },
-    {
-      "n": "Miniso",
-      "d": "miniso.com"
-    },
-    {
-      "n": "ACI",
-      "d": "aci-bd.com"
-    },
-    {
-      "n": "Marico",
-      "d": "marico.com"
-    },
-    {
-      "n": "Colgate",
-      "d": "colgate.com"
-    },
-    {
-      "n": "Domino's Pizza",
-      "d": "dominos.com"
-    },
-    {
-      "n": "IDLC",
-      "d": "idlc.com"
-    },
-    {
-      "n": "BSRM",
-      "d": "bsrm.com"
-    },
-    {
-      "n": "New Zealand Dairy"
-    },
-    {
-      "n": "Shanta Properties"
-    },
-    {
-      "n": "Turaag Active"
-    }
-  ],
-  "threads": [
-    {
-      "n": "01",
-      "h": "Analyst by habit",
-      "p": "I tend to read the pattern in the data first, then build the fix. It's the habit under most of what I do."
-    },
-    {
-      "n": "02",
-      "h": "Every side of the table",
-      "p": "Agency, brand, retail and platform — I've been fortunate to work all four, which makes it easier to see the whole picture."
-    },
-    {
-      "n": "03",
-      "h": "Measurement first",
-      "p": "From a research desk to Aleph's Google team, the constant was proving which unit of spend did the work."
-    },
-    {
-      "n": "04",
-      "h": "Constraint as craft",
-      "p": "The Grand Prix came from a small-budget brief. The tighter the budget, the sharper the thinking it forces."
-    }
-  ],
-  "links": [
-    {
-      "label": "LinkedIn ↗",
-      "href": "https://www.linkedin.com/in/injamamulhossain",
-      "ext": true
-    },
-    {
-      "label": "helloinjamam@gmail.com",
-      "href": "mailto:helloinjamam@gmail.com"
-    },
-    {
-      "label": "+880 1973 382257",
-      "href": "tel:+8801973382257"
+      "vh": "Real Estate",
+      "brands": "Shanta Properties",
+      "caps": [
+        "Strategy",
+        "Lead generation",
+        "Media buying"
+      ]
     }
   ],
   "chart": {
@@ -725,145 +865,5 @@
       1,
       2
     ]
-  },
-  "switches": [
-    {
-      "i": 0,
-      "logos": [
-        {
-          "text": "Intern",
-          "bg": "#5A6478"
-        },
-        {
-          "text": "RPSI",
-          "bg": "#1F3A5F"
-        }
-      ]
-    },
-    {
-      "i": 2,
-      "logos": [
-        {
-          "text": "MS",
-          "bg": "#E23B2E",
-          "domain": "mindshareworld.com"
-        }
-      ]
-    },
-    {
-      "i": 3,
-      "logos": [
-        {
-          "text": "MK",
-          "bg": "#6C3EF4",
-          "domain": "markopolo.ai"
-        },
-        {
-          "text": "MBA",
-          "bg": "#127C8A",
-          "domain": "wpp.com"
-        }
-      ]
-    },
-    {
-      "i": 5,
-      "logos": [
-        {
-          "text": "Bata",
-          "bg": "#E4002B",
-          "domain": "bata.com"
-        }
-      ]
-    },
-    {
-      "i": 6,
-      "logos": [
-        {
-          "text": "aleph",
-          "bg": "#111318",
-          "domain": "alephholding.com"
-        }
-      ]
-    }
-  ],
-  "copy": {
-    "hero_eyebrow": "Six years, seven roles — scroll to follow the path",
-    "hero_name1": "A.S.M Injamamul",
-    "hero_name2": "Hossain",
-    "hero_tagline": "A <b>problem-solver, and an analyst by habit</b> — I try to find the pattern before the fix. Six years in digital marketing across Bangladesh's markets, on <b>every side of it</b>: agency, brand, and platform.",
-    "path_kicker": "The path",
-    "path_headline": "Seven roles, one habit that never changed: proving what actually worked.",
-    "path_intro": "The line drifts outward and its nodes grow as scope widens. Each stop carries how I actually landed it — and the raise that came with the move.",
-    "eco_kicker": "Across the ecosystem",
-    "eco_headline": "I've worked every side of the table.",
-    "eco_intro": "Rather than staying in one lane, I've moved through most of the digital-marketing ecosystem — buying media at the agency, owning a brand and its retail P&L, and now working on measurement from the platform side.",
-    "chart_kicker": "How the moves happened",
-    "chart_headline": "Over time, the moves came through people.",
-    "chart_intro": "Applications sent each year (bars) against inbound conversations — referrals, intros, offers (line). The two trade places over time.",
-    "chart_take": "In 2020 I sent nine applications and switched twice — an internship, then RPSI. From <b>2023 on</b>, the moves arrived as offers rather than applications: Markopolo and the Banglalink team, then Bata, then Aleph.",
-    "chart_note": "This one's really for people just starting out: it shows what steady, dedicated output does over time. Early on you chase the opportunities — but as the work, the results and the network compound, the opportunities start coming to you. That shift is the advantage.",
-    "verts_kicker": "Depth, by vertical",
-    "verts_headline": "Not one industry — many, each with real depth.",
-    "verts_intro": "Brand and category experience across the verticals that matter in this market.",
-    "spend_kicker": "Spend & strategy",
-    "spend_headline": "The scale I've worked at, and the playbooks behind it.",
-    "spend_intro": "The scale I've operated at, the platforms I buy on, and the strategies I run for global brands across South Asian markets.",
-    "tools_kicker": "Toolbox",
-    "tools_headline": "The tools I work in, hands-on.",
-    "tools_intro": "Day-to-day across measurement, media platforms, and creative production.",
-    "ledger_kicker": "The numbers",
-    "ledger_headline": "What the work moved.",
-    "ledger_intro": "Every figure below is pulled directly from the record — not projections.",
-    "awards_kicker": "Recognition",
-    "awards_headline": "A few things that got recognised along the way.",
-    "certs_kicker": "Credentials",
-    "certs_headline": "Certified where it counts.",
-    "certs_intro": "A selection — the full list runs longer.",
-    "brands_kicker": "Behind the numbers",
-    "brands_headline": "Brands I've worked with.",
-    "blog_kicker": "Writing & projects",
-    "blog_headline": "Notes from the work — updated now and then.",
-    "blog_intro": "Deeper write-ups on the campaigns and tools behind the numbers. New posts are what bring people back.",
-    "coda_kicker": "What a résumé hides",
-    "coda_headline": "The line above isn't jobs. It's one argument, made seven times.",
-    "connect_kicker": "Connect"
-  },
-  "settings": {
-    "title": "Injamam — Digital Raven OTW",
-    "description": "Injamamul Hossain — exploring and fixing digital marketing across Bangladesh's markets: agency, brand, and platform. Measurement, strategy, and case studies.",
-    "faviconText": "i",
-    "preloader": "signature",
-    "ga4": "",
-    "headScripts": "",
-    "bodyEndScripts": ""
-  },
-  "footer": {
-    "text": "Measurement, strategy, and the occasional experiment — written up here now and then. Always open to a good problem.",
-    "links": [
-      {
-        "label": "LinkedIn",
-        "href": "https://linkedin.com/in/injamamulhossain",
-        "ext": true
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/hi-injamam",
-        "ext": true
-      },
-      {
-        "label": "Email",
-        "href": "mailto:helloinjamam@gmail.com"
-      },
-      {
-        "label": "Book a call",
-        "href": "https://calendar.app.google/TtsqN8JQctsiTBzYA",
-        "ext": true
-      },
-      {
-        "label": "Privacy",
-        "href": "/privacy/"
-      }
-    ],
-    "copyright": "A.S.M Injamamul Hossain"
   }
 }
