@@ -4,8 +4,8 @@ backend:
   name: github
   repo: hi-injamam/portfolio
   branch: main
-  # Authenticate GitHub login via a free OAuth relay (see README, step 5).
-  base_url: https://YOUR-OAUTH-RELAY.workers.dev
+  base_url: https://decap-proxy.helloinjamam.workers.dev
+  auth_endpoint: auth
 
 # Lets you run the CMS locally with `npx decap-server` for testing.
 local_backend: true
