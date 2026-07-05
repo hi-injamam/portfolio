@@ -2,7 +2,7 @@
 # Change `repo` to  <your-github-username>/<your-repo>  before deploying.
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO
+  repo: hi-injamam/portfolio
   branch: main
   # Authenticate GitHub login via a free OAuth relay (see README, step 5).
   base_url: https://YOUR-OAUTH-RELAY.workers.dev
