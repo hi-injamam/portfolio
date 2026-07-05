@@ -6,6 +6,7 @@ analytics, injected scripts) and built-in SEO + sitemap.
 
 ---
 
+
 ## A. Updating the site on GitHub (after edits)
 
 You do **NOT** need to delete the old files. Two ways:
