@@ -594,23 +594,71 @@
     }
   ],
   "brands": [
-    "Bata",
-    "PepsiCo",
-    "Unilever · Lux",
-    "Lifebuoy",
-    "Banglalink",
-    "Arla Foods",
-    "Castrol",
-    "Miniso",
-    "ACI",
-    "Marico",
-    "Colgate",
-    "Domino's Pizza",
-    "IDLC",
-    "BSRM",
-    "New Zealand Dairy",
-    "Shanta Properties",
-    "Turaag Active"
+    {
+      "n": "Bata",
+      "d": "bata.com"
+    },
+    {
+      "n": "PepsiCo",
+      "d": "pepsico.com"
+    },
+    {
+      "n": "Unilever · Lux",
+      "d": "unilever.com"
+    },
+    {
+      "n": "Lifebuoy",
+      "d": "lifebuoy.com"
+    },
+    {
+      "n": "Banglalink",
+      "d": "banglalink.net"
+    },
+    {
+      "n": "Arla Foods",
+      "d": "arla.com"
+    },
+    {
+      "n": "Castrol",
+      "d": "castrol.com"
+    },
+    {
+      "n": "Miniso",
+      "d": "miniso.com"
+    },
+    {
+      "n": "ACI",
+      "d": "aci-bd.com"
+    },
+    {
+      "n": "Marico",
+      "d": "marico.com"
+    },
+    {
+      "n": "Colgate",
+      "d": "colgate.com"
+    },
+    {
+      "n": "Domino's Pizza",
+      "d": "dominos.com"
+    },
+    {
+      "n": "IDLC",
+      "d": "idlc.com"
+    },
+    {
+      "n": "BSRM",
+      "d": "bsrm.com"
+    },
+    {
+      "n": "New Zealand Dairy"
+    },
+    {
+      "n": "Shanta Properties"
+    },
+    {
+      "n": "Turaag Active"
+    }
   ],
   "threads": [
     {
@@ -779,5 +827,43 @@
     "coda_kicker": "What a résumé hides",
     "coda_headline": "The line above isn't jobs. It's one argument, made seven times.",
     "connect_kicker": "Connect"
+  },
+  "settings": {
+    "title": "Injamam — Digital Raven OTW",
+    "description": "Injamamul Hossain — exploring and fixing digital marketing across Bangladesh's markets: agency, brand, and platform. Measurement, strategy, and case studies.",
+    "faviconText": "i",
+    "preloader": "signature",
+    "ga4": "",
+    "headScripts": "",
+    "bodyEndScripts": ""
+  },
+  "footer": {
+    "text": "Measurement, strategy, and the occasional experiment — written up here now and then. Always open to a good problem.",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/injamamulhossain",
+        "ext": true
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/hi-injamam",
+        "ext": true
+      },
+      {
+        "label": "Email",
+        "href": "mailto:helloinjamam@gmail.com"
+      },
+      {
+        "label": "Book a call",
+        "href": "https://calendar.app.google/TtsqN8JQctsiTBzYA",
+        "ext": true
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy/"
+      }
+    ],
+    "copyright": "A.S.M Injamamul Hossain"
   }
 }

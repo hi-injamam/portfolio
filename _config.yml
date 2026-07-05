@@ -1,10 +1,23 @@
-title: "A.S.M Injamamul Hossain"
-description: "Digital marketing across Bangladesh's markets — agency, brand, and platform."
+title: "Injamam — Digital Raven OTW"
+description: "Injamamul Hossain — exploring and fixing digital marketing across Bangladesh's markets: agency, brand, and platform. Measurement, strategy, and case studies."
+author: "A.S.M Injamamul Hossain"
 url: "https://injamam.com"
 baseurl: ""
+lang: en_US
 markdown: kramdown
 permalink: /blog/:title/
 timezone: Asia/Dhaka
+
+# Default share image for link previews / SEO
+logo: /assets/img/avatar.jpg
+image: /assets/img/avatar.jpg
+twitter:
+  card: summary_large_image
+
+# SEO + sitemap (both supported natively by GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Blog posts use the post layout + share a tag; everything else stays untouched.
 defaults:

@@ -1,69 +1,102 @@
-# injamam.com — portfolio + blog + content dashboard
+# injamam.com — portfolio + blog + editable dashboard
 
-A Jekyll site: the scrollytelling CV homepage, a Markdown blog, and a Decap CMS
-dashboard (at /admin) to edit both — all hostable free on GitHub Pages.
-
-## What's where
-- `index.html` — the CV homepage. Reads its content from `_data/cv.json`.
-- `_data/cv.json` — every CV block + headline/copy. Edited via the dashboard.
-- `_posts/` — blog posts (Markdown). New posts show on the homepage + `/blog/`.
-- `admin/` — the Decap CMS dashboard (`/admin`).
-- `assets/img/avatar.jpg` — your photo. Swap it (same name) to change it.
-- `blog.html`, `privacy.md`, `_layouts/` — blog list, privacy page, page shells.
-- `CNAME` — your custom domain.
+A Jekyll site: the scrollytelling homepage, a Markdown blog, a Decap CMS
+dashboard (at /admin), plus editable tools (site name, favicon, footer,
+analytics, injected scripts) and built-in SEO + sitemap.
 
 ---
 
-## GO LIVE — exact steps
+## A. Updating the site on GitHub (after edits)
 
-### 1. Create the repo
-- New GitHub repo, e.g. `portfolio` (Public).
-- Upload every file/folder here, keeping the structure. (Web UI: "Add file → Upload files", drag the whole folder in, Commit.)
+You do **NOT** need to delete the old files. Two ways:
 
-### 2. Turn on GitHub Pages
-- Repo **Settings → Pages**.
-- Source: **Deploy from a branch** → `main` / `(root)` → Save.
-- Wait ~1 min; it builds at `https://YOURNAME.github.io/portfolio`.
+**Easiest (overwrite via web):**
+1. Repo → **Add file → Upload files**.
+2. Unzip this package and drag in the files/folders that changed (or all of
+   them). Uploading a file with the same path **overwrites** it.
+3. **Commit changes.** GitHub rebuilds automatically (~1 min).
 
-### 3. Point your domain (injamam.com)
-At your registrar's DNS, add four A records for the apex `@`:
-`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-and a CNAME for `www` → `YOURNAME.github.io`.
-The included `CNAME` file already sets `injamam.com`. Back in Settings → Pages,
-wait for the check, then tick **Enforce HTTPS**.
+> Only "delete then re-upload" if you renamed/removed files and want a clean
+> slate. For normal edits, overwrite-upload is enough. `index.html`,
+> `_data/cv.json`, `_config.yml`, `admin/`, `_layouts/`, `assets/` must stay at
+> the repo root.
 
-### 4. Point the CMS at your repo
-Edit `admin/config.yml`:
-- `repo:` → `YOURNAME/portfolio`
-- `branch:` → `main`
-
-### 5. Enable dashboard login (one-time)
-GitHub login for the dashboard needs a tiny free OAuth relay (GitHub Pages can't
-do it alone). Easiest path:
-- Deploy a free **Cloudflare Worker OAuth** for Decap (search "decap cms cloudflare
-  worker oauth" — it's a copy-paste worker).
-- Register a **GitHub OAuth App** (Settings → Developer settings → OAuth Apps),
-  callback URL = your worker's `/callback`.
-- Put the worker URL into `admin/config.yml` as `base_url:`.
-Then visit `https://injamam.com/admin`, log in with GitHub, and edit away —
-every save commits to the repo and the site rebuilds automatically.
-
-> Prefer zero setup? Skip step 5 and just edit `_data/cv.json` and add files to
-> `_posts/` directly in GitHub's web editor. The dashboard is optional.
-
-### 6. (Optional) local preview
-`bundle install` then `bundle exec jekyll serve` → http://localhost:4000
-For the CMS locally: `npx decap-server` and open `/admin` (uses `local_backend`).
+**Best for frequent edits:** use the dashboard (Section C) — it commits for you.
 
 ---
 
-## Editing content
-- **CV blocks & copy:** dashboard → "CV content", or edit `_data/cv.json`.
-- **Blog posts:** dashboard → "Blog posts → New", or add `YYYY-MM-DD-title.md` to `_posts/`.
-- **Photo:** replace `assets/img/avatar.jpg`.
-- **Chart data / role-switch logos:** in `_data/cv.json` under `chart` and `switches`.
+## B. First-time go-live (recap)
+1. Repo → **Settings → Pages** → Source **Deploy from a branch** → `main` / root.
+2. DNS: four A records `@` → 185.199.108–111.153, and `www` CNAME →
+   `hi-injamam.github.io`. `CNAME` file already sets `injamam.com`.
+3. Wait for the check, then tick **Enforce HTTPS**.
 
-## Notes
-- Company/tool logos load live from Google's favicon service — they appear once
-  the site is on a real domain (some previews block external images).
-- Booking button points to your Google Calendar page; change it in `index.html`.
+---
+
+## C. Activate the CMS dashboard (/admin)
+
+The dashboard edits content through GitHub. GitHub login needs a small, free
+OAuth relay (GitHub Pages can't do the login handshake alone).
+
+1. In `admin/config.yml`, set `repo: hi-injamam/portfolio` and `branch: main`.
+2. Deploy a free **Decap CMS OAuth relay** (a copy-paste Cloudflare Worker —
+   search "decap cms cloudflare worker oauth"). It gives you a URL.
+3. Create a **GitHub OAuth App** (GitHub → Settings → Developer settings →
+   OAuth Apps): Homepage `https://injamam.com`, callback = your worker's
+   `/callback` URL. Copy the Client ID/Secret into the worker.
+4. Put the worker URL into `admin/config.yml` as `base_url:`.
+5. Visit `https://injamam.com/admin`, log in with GitHub. Every save commits to
+   the repo and the site rebuilds itself.
+
+> No dashboard? You can always edit `_data/cv.json` and add posts in `_posts/`
+> directly in GitHub's web editor. The CMS is a convenience, not a requirement.
+
+---
+
+## D. The editable tools
+
+All live under **CV content → CV — all blocks & copy** in the dashboard, or in
+`_data/cv.json`:
+
+- **Site name / title** — `settings.title` (browser tab + SEO title).
+- **Meta description** — `settings.description` (search + link previews).
+- **Favicon** — `settings.faviconText` (1–2 letters in the gradient square).
+- **Analytics (GA4)** — put your `G-XXXXXXXXXX` in `settings.ga4`. Blank = off.
+- **Injected scripts** — `settings.headScripts` / `settings.bodyEndScripts`
+  accept any raw tags (Search Console meta, pixels, etc.).
+- **Footer** — `footer.text`, `footer.links` (label/URL/external), `footer.copyright`.
+- **Blog posts** — dashboard "Blog posts → New", or add `YYYY-MM-DD-title.md`
+  to `_posts/`.
+- **Photo** — replace `assets/img/avatar.jpg`.
+- **Preloader** — the signature intro; short + auto-dismiss (edit in `index.html`).
+
+---
+
+## E. Google Search Console + SEO
+
+SEO tags (title, description, Open Graph, Twitter card, canonical, JSON-LD) and
+`sitemap.xml` + `robots.txt` are generated automatically (jekyll-seo-tag +
+jekyll-sitemap).
+
+**Search Console setup:**
+1. Add the property `injamam.com` in Search Console.
+2. **Verify** — either:
+   - **DNS:** add the TXT record they give you in ExonHost Manage DNS, or
+   - **HTML tag:** paste their `<meta name="google-site-verification" …>` into
+     `settings.headScripts` in the dashboard.
+3. **Submit sitemap:** `https://injamam.com/sitemap.xml`.
+
+That's it — the OG/Twitter cards mean shared links unfurl with your name, tagline,
+and photo.
+
+---
+
+## Structure
+- `index.html` — homepage (content from `_data/cv.json`).
+- `_data/cv.json` — all CV blocks, copy, settings, footer.
+- `_posts/` — blog posts. `blog.html` — blog index. `privacy.md` — privacy page.
+- `admin/` — Decap CMS. `_layouts/` — blog/page shells (with SEO + favicon + GA4).
+- `assets/` — CSS + image uploads. `CNAME` — custom domain.
+
+Note: brand/tool logos load live from Google's favicon service — they appear on
+the real domain; local previews may show some as text/monograms.

@@ -182,7 +182,14 @@ collections:
                   - { label: "Domain", name: "domain", widget: "string", required: false }
               - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
           # ---- Brand wall ----
-          - { label: "Brand wall", name: "brands", widget: "list", field: { label: "Brand", name: "brand", widget: "string" } }
+          - label: "Brand wall"
+            name: "brands"
+            widget: "list"
+            summary: "{{fields.n}}"
+            collapsed: true
+            fields:
+              - { label: "Brand name", name: "n", widget: "string" }
+              - { label: "Logo domain (optional)", name: "d", widget: "string", required: false, hint: "e.g. bata.com — leave blank for text-only" }
           # ---- Through-lines ----
           - label: "Through-lines (coda)"
             name: "threads"
@@ -203,3 +210,32 @@ collections:
               - { label: "Label", name: "label", widget: "string" }
               - { label: "URL", name: "href", widget: "string" }
               - { label: "External", name: "ext", widget: "boolean", required: false, default: false }
+          # ---- Site settings (favicon, site name, analytics, injected scripts) ----
+          - label: "Site settings"
+            name: "settings"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Site name / browser title", name: "title", widget: "string" }
+              - { label: "Meta description (SEO)", name: "description", widget: "text" }
+              - { label: "Favicon letter(s)", name: "faviconText", widget: "string", hint: "1-2 characters shown in the favicon" }
+              - { label: "Preloader style", name: "preloader", widget: "select", default: "signature", options: ["signature","bar","dot","off"], hint: "signature = handwriting draw-in" }
+              - { label: "GA4 Measurement ID", name: "ga4", widget: "string", required: false, hint: "e.g. G-XXXXXXXXXX — leave blank to disable" }
+              - { label: "Head scripts (paste raw <script>/<meta>)", name: "headScripts", widget: "text", required: false, hint: "Google Search Console verification meta, extra tags, etc." }
+              - { label: "Body-end scripts", name: "bodyEndScripts", widget: "text", required: false }
+          # ---- Footer (editable text + links) ----
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Footer text", name: "text", widget: "text" }
+              - { label: "Copyright name", name: "copyright", widget: "string" }
+              - label: "Footer links"
+                name: "links"
+                widget: "list"
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "href", widget: "string" }
+                  - { label: "External", name: "ext", widget: "boolean", required: false, default: false }
